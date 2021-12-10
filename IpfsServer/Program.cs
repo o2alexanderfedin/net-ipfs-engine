@@ -28,16 +28,15 @@ namespace Ipfs.Server
         /// <summary>
         ///   Main entry point.
         /// </summary>
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             try
             {
                 IpfsEngine = new IpfsEngine(passphrase.ToCharArray());
-                IpfsEngine.StartAsync().Wait();
+                await IpfsEngine.StartAsync();
 
-                BuildWebHost(args)
-                    .RunAsync(cancel.Token)
-                    .Wait();
+                await BuildWebHost(args)
+                    .RunAsync(cancel.Token);
             }
             catch (TaskCanceledException)
             {
@@ -50,7 +49,7 @@ namespace Ipfs.Server
 
             if (IpfsEngine != null)
             {
-                IpfsEngine.StopAsync().Wait();
+                await IpfsEngine.StopAsync();
             }
         }
 

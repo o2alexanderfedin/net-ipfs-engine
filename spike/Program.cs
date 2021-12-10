@@ -21,7 +21,7 @@ namespace Spike
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             // set logger factory
             var properties = new Common.Logging.Configuration.NameValueCollection();
@@ -32,8 +32,7 @@ namespace Spike
             LogManager.Adapter = new ConsoleOutLoggerFactoryAdapter(properties);
 
             var test = new BitswapApiTest();
-            test.GetsBlock_OnConnect().Wait();
+            await test.GetsBlock_OnConnect();
         }
-
     }
 }

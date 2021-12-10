@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Ipfs.CoreApi;
@@ -10,9 +9,9 @@ namespace Ipfs.Engine.CoreApi
 {
     class PubSubApi : IPubSubApi
     {
-        IpfsEngine ipfs;
+        private readonly IIpfsEngine ipfs;
 
-        public PubSubApi(IpfsEngine ipfs)
+        public PubSubApi(IIpfsEngine ipfs)
         {
             this.ipfs = ipfs;
         }

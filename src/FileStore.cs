@@ -185,7 +185,7 @@ namespace Ipfs.Engine
             var path = GetPath(name);
 
             using (await storeLock.WriterLockAsync(cancel).ConfigureAwait(false))
-            using (var stream = File.Create(path))
+            await using (var stream = File.Create(path))
             {
                 try
                 {
@@ -195,7 +195,7 @@ namespace Ipfs.Engine
                 {
                     try
                     {
-                        stream.Dispose();
+                        await stream.DisposeAsync();
                         File.Delete(path);
                     }
                     catch (Exception)

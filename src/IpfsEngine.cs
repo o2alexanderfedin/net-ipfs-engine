@@ -32,7 +32,7 @@ namespace Ipfs.Engine
     ///   The engine should be used as a shared object in your program. It is thread safe (re-entrant) and conserves 
     ///   resources when only one instance is used.
     /// </remarks>
-    public partial class IpfsEngine : ICoreApi, IService, IDisposable
+    public partial class IpfsEngine : IIpfsEngine
     {
         static ILog log = LogManager.GetLogger(typeof(IpfsEngine));
 

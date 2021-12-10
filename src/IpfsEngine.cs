@@ -20,6 +20,7 @@ using System.Collections.Concurrent;
 using System.Security;
 using PeerTalk.SecureCommunication;
 using PeerTalk.Cryptography;
+// ReSharper disable UnusedMemberInSuper.Global
 
 namespace Ipfs.Engine
 {

@@ -842,7 +842,7 @@ namespace Ipfs.Engine
                 var dirid = dir.Id.Encode();
 
                 var tar = await ipfs.FileSystem.GetAsync(dir.Id);
-                var archive = TarArchive.CreateInputTarArchive(tar);
+                var archive = TarArchive.CreateInputTarArchive(tar, Encoding.UTF8);
                 var files = new List<string>();
                 archive.ProgressMessageEvent += (a, e, m) =>
                 {
@@ -879,7 +879,7 @@ namespace Ipfs.Engine
                 var dirid = dir.Id.Encode();
 
                 var tar = await ipfs.FileSystem.GetAsync(dir.Id);
-                var archive = TarArchive.CreateInputTarArchive(tar);
+                var archive = TarArchive.CreateInputTarArchive(tar, Encoding.UTF8);
                 var files = new List<string>();
                 archive.ProgressMessageEvent += (a, e, m) =>
                 {

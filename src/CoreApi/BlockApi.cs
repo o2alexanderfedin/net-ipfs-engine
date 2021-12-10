@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Ipfs.CoreApi;
 using Common.Logging;
-using System.Linq;
 using System.Runtime.Serialization;
 
 namespace Ipfs.Engine.CoreApi

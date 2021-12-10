@@ -1,11 +1,4 @@
-﻿using Common.Logging;
-using Ipfs;
-using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Ipfs.Engine.BlockExchange

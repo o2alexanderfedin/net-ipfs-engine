@@ -5,7 +5,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
-using System.Globalization;
 using System.Text;
 
 namespace Ipfs.Server.HttpApi.V0

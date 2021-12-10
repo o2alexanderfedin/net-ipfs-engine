@@ -1,11 +1,8 @@
-﻿using Ipfs;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PeerTalk;
-using System;
 using System.Linq;
 using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace Ipfs.Engine.BlockExchange
 {

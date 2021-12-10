@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using System.Globalization;
-using Newtonsoft.Json;
 using Microsoft.Net.Http.Headers;
 
 namespace Ipfs.Server.HttpApi.V0

@@ -1,24 +1,14 @@
 ﻿using Common.Logging;
 using Common.Logging.Simple;
-using Ipfs;
 using Ipfs.Http;
 using Ipfs.CoreApi;
 using Ipfs.Engine;
 using McMaster.Extensions.CommandLineUtils;
 using Newtonsoft.Json;
-using PeerTalk;
-using PeerTalk.Protocols;
-using PeerTalk.Transports;
 using System;
-using System.Collections.Specialized;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Net;
-using System.Net.Sockets;
 using System.Reflection;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace Ipfs.Cli

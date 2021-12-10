@@ -1,9 +1,5 @@
-﻿using Ipfs.Engine;
-using McMaster.Extensions.CommandLineUtils;
-using System;
-using System.Collections.Generic;
+﻿using McMaster.Extensions.CommandLineUtils;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Ipfs.Cli

@@ -2,8 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using Newtonsoft.Json;
 using System.IO;
 using System.Threading.Tasks;
 using System.Threading;
@@ -13,7 +11,6 @@ using Ipfs.Engine.Cryptography;
 using Ipfs.Engine.Migration;
 using PeerTalk;
 using System.Reflection;
-using PeerTalk.Discovery;
 using Nito.AsyncEx;
 using Makaretu.Dns;
 using System.Collections.Concurrent;

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Ipfs.Engine.UnixFileSystem
+﻿namespace Ipfs.Engine.UnixFileSystem
 {
     /// <summary>
     ///   A link to another <see cref="FileSystemNode"/> in the IPFS Unix File System.

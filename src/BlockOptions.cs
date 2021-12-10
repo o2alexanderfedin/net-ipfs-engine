@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Ipfs.Engine
+﻿namespace Ipfs.Engine
 {
     /// <summary>
     ///   Configuration options for a <see cref="Ipfs.CoreApi.IBlockApi">block service</see>.

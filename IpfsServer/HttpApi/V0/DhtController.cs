@@ -1,5 +1,4 @@
 ﻿using Ipfs.CoreApi;
-using PeerTalk; // TODO: need MultiAddress.WithOutPeer (should be in IPFS code)
 using System;
 using System.Collections.Generic;
 using System.Linq;

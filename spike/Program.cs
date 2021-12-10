@@ -1,20 +1,6 @@
 ﻿using Common.Logging;
 using Common.Logging.Simple;
-using Ipfs;
-using Ipfs.CoreApi;
 using Ipfs.Engine;
-using PeerTalk;
-using PeerTalk.Protocols;
-using PeerTalk.Transports;
-using System;
-using System.Collections.Specialized;
-using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.Net;
-using System.Net.Sockets;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace Spike

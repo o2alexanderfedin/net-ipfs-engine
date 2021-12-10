@@ -1,9 +1,4 @@
-﻿using Ipfs;
-using Ipfs.CoreApi;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Ipfs.CoreApi;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading;
 using Microsoft.Extensions.Primitives;

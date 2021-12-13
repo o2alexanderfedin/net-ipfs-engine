@@ -14,10 +14,8 @@ namespace Ipfs.Engine.CoreApi
 {
     class DagApi : IDagApi
     {
-        static readonly PODOptions podOptions = new PODOptions
-        (
-            removeIsPrefix: false,
-            useCamelCase: false
+        private static readonly PODOptions podOptions = new PODOptions(
+            "useCamelCase=false;removeIsPrefix=false"
         );
         IpfsEngine ipfs;
 

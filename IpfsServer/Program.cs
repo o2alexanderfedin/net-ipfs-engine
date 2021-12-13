@@ -51,7 +51,12 @@ namespace Ipfs.Server
         static IWebHost BuildWebHost(string[] args)
         {
             var urls = "http://127.0.0.1:5009";
-            var addr = (string)IpfsEngine.Config.GetAsync("Addresses.API").Result;
+            var addrTask = Task.Run(async () =>
+            {
+                var jToken = await IpfsEngine.Config.GetAsync("Addresses.API");
+                return jToken;
+            });
+            var addr = (string)addrTask.Result;
             if (addr != null)
             {
                 // Quick and dirty: multiaddress to URL

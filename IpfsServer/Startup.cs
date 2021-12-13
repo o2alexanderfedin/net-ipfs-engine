@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Text.Json;
 using Ipfs.CoreApi;
@@ -6,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Ipfs.Server
@@ -37,10 +39,27 @@ namespace Ipfs.Server
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v0", new Info {
-                    Title = "IPFS HTTP API",
-                    Description = "The API for interacting with IPFS nodes.",  
-                    Version = "v0" });
+                c.SwaggerDoc(
+                    "v0",
+                    new OpenApiInfo
+                    {
+                        Title = "IPFS HTTP API",
+                        Description = "The API for interacting with IPFS nodes.",
+                        Version = "v0",
+                        Contact = new OpenApiContact
+                        {
+                            Email = "af@o2.services",
+                            Name = "o2.services",
+                            Url = new Uri("https://o2.services")
+                        },
+                        License = new OpenApiLicense
+                        {
+                            Name = "TBD",
+                            Url = new Uri("https://o2.services/licenses")
+                        },
+                        TermsOfService = new Uri("https://o2.services/terms-of-service")
+                    }
+                );
 
                 var path = System.Reflection.Assembly.GetExecutingAssembly().Location;
                 path = Path.ChangeExtension(path, ".xml");
